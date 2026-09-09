@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+/* 1. Definição das cores fixas do Potengi Cozinha Regional */
+:root {
+  --background: #fbf9f4; /* Fundo principal off-white / areia bem suave */
+  --background-alt: #ffffff; /* Fundo alternativo / seções */
+  --background-footer: #e4e2dd; /* Fundo do rodapé */
+
+  --background-detail: #f0eee9; /* Fundo de detalhes */
+  --background-card: #fbf9f4; /* Fundo dos cards e caixas */
+  --background-form: #ffffff; /* Fundo do formulário (harmonizado com o alt) */
+  --background-input: #f0eee9; /* Fundo dos campos de formulário (tom sutil para destaque e contraste interno) */
+
+  --text-title: #1b1c19;
+  --text-title-detail: #ffca98;
+  --text-main: #4f4542; /* Texto principal (marrom escuro aconchegante) */
+  --text-muted: #817471; /* Texto secundário / descrições */
+  --text-detail: #e4e2dd;
+
+  --primary: #7d562d; /* Cor primária de destaque (tom de especiaria / dourado terroso) */
+  --border: #e2dbd3; /* Cor das bordas e divisores */
+}
+
+/* 2. Mapeamento para o Tailwind usando @theme inline */
+@theme inline {
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-background-footer: var(--background-footer);
+  --color-background-detail: var(--background-detail);
+  --color-background-card: var(--background-card);
+  --color-background-form: var(--background-form);
+  --color-background-input: var(--background-input);
+
+  --color-text-title: var(--text-title);
+  --color-text-title-detail: var(--text-title-detail);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-text-detail: var(--text-detail);
+
+  --color-primary: var(--primary);
+  --color-border: var(--border);
+
+  /* Configuração rigorosa das fontes escolhidas para o restaurante */
+  --font-libre-caslon: var(--font-libre-caslon);
+  --font-hanken-grotesk: var(--font-hanken-grotesk);
+
+  --max-site-width: 1440px;
+  --side-padding: 1.5rem;
+}
+
+/* 3. Camada base e aplicação das tipografias por tag */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px;
+  }
+
+  body {
+    @apply bg-background text-text-main antialiased font-sans;
+    font-family: var(--font-hanken-grotesk), sans-serif;
+  }
+
+  .wrapper {
+    @apply w-full max-w-(--max-site-width) mx-auto px-(--side-padding);
+  }
+
+  /* Títulos H1, H2, H3 com Libre Caslon Text (charme clássico e elegante) */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-libre-caslon), serif;
+    @apply text-text-title font-bold tracking-tight;
+  }
+
+  /* 4. Scrollbar Personalizada */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary) var(--background-detail);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background-detail);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 9999px;
+    border: 2px solid var(--background-detail);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-muted);
+  }
+}
