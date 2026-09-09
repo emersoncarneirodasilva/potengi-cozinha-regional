@@ -141,7 +141,7 @@ Certifique-se de ter o **Node.js** (versão 20+) instalado em sua máquina.
 
 1. **Clone o repositório:**
 ```bash
-git clone [https://github.com/emersoncarneirodasilva/potengi-cozinha-regional.git](https://github.com/emersoncarneirodasilva/potengi-cozinha-regional.git)
+git clone https://github.com/emersoncarneirodasilva/potengi-cozinha-regional.git
 cd potengi-cozinha-regional
 
 ```
