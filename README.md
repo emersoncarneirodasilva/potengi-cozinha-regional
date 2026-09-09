@@ -1,4 +1,4 @@
-# 🍲 Potengi Cozinha Regional | Landing Page & Sistema Institucional
+# 🍲 Potengi Cozinha Regional | Site Institucional & Plataforma de Reservas
 
 <div align="center">
   <img src="https://img.shields.io/badge/Next.js-16.3.4-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
