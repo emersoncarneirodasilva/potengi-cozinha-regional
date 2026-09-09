@@ -17,7 +17,7 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://potengicozinha.com.br"), // Substitua pela URL oficial do restaurante quando tiver
+  metadataBase: new URL("https://potengi-cozinha-regional.pages.dev"),
   title: {
     default:
       "Potengi Cozinha Regional | O Melhor da Culinária Potiguar na Redinha",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://potengicozinha.com.br",
+    url: "https://potengi-cozinha-regional.pages.dev",
     title: "Potengi Cozinha Regional | Culinária Típica na Redinha",
     description:
       "Vivencie a verdadeira experiência da culinária potiguar com vista para as águas do Rio Potengi em Natal, RN.",
