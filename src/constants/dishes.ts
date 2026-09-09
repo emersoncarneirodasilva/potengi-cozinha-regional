@@ -7,7 +7,7 @@ export const DISHES = [
     title: "Sol do Seridó",
     description:
       "Mignon de sol artesanal, purê sedoso de macaxeira com manteiga de garrafa, crocante de queijo coalho e demi-glace de rapadura.",
-    price: "R$ 118",
+    price: "R$ 145",
     image: dish1,
   },
   {
